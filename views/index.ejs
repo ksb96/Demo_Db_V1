@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Just a Database!!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="container mt-4">
+      <div class="card">
+        <div class="card-body">
+          <% if (messages.success) { %>
+              <p class="alert alert-success m2-4 mb-2"><%- messages.success %></p>
+          <% } %>  
+ 
+          <h2>Node.js Express Save Data from Html Form to Mongodb Database - Tutsmake.com</h2>
+ 
+          <form action="add-user" method="POST">
+            <div class="form-group">
+              <label for="firstName">Name</label>
+              <input type="text" class="form-control col-lg-9" id="name" aria-describedby="emailHelp" placeholder="Enter your Name" name="name">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control col-lg-9" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="phone" class="form-control col-lg-9" id="phoneInput" aria-describedby="emailHelp" name="phone" placeholder="Enter your Phone Number">
+            </div>
+            <div class="form-group">
+              <label for="phone">City</label>
+              <input type="city" class="form-control col-lg-9" id="cityInput" aria-describedby="emailHelp" name="city" placeholder="Enter your City">
+            </div>
+            <div class="form-group">
+              <label for="address">Address</label>
+              <input type="address" class="form-control col-lg-9" id="addressInput" aria-describedby="emailHelp" name="address" placeholder="Enter your address">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+    </div>
+  </div>
+  </body>
+</html>
